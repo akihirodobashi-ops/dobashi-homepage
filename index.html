@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>土橋章宏｜衆議院議員・脚本家</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="土橋章宏の公式サイト。政策、国会での活動、活動レポート、作品。" />
+  <style>
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:#fff;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .hero-wrap{position:relative;width:100%;overflow:hidden;background:#eafcff}
+    .hero-art{display:block;width:100%;height:auto;min-height:620px;object-fit:cover;object-position:top center}
+    .hotspot{position:absolute;display:block;z-index:5;border-radius:10px;cursor:pointer}
+    .hotspot:focus-visible{outline:3px solid #00a8a8;outline-offset:2px;background:rgba(255,255,255,.15)}
+    .hs-home{left:25.7%;top:1.2%;width:5.7%;height:5.5%}
+    .hs-profile{left:31.6%;top:1.2%;width:7.2%;height:5.5%}
+    .hs-policy{left:39.1%;top:1.2%;width:6.3%;height:5.5%;display:flex;align-items:center;justify-content:center;background:#eafcff;color:#0f172a;font-size:clamp(9px,1vw,15px);font-weight:700;white-space:nowrap}
+    .hs-diet{left:45.0%;top:1.2%;width:8.3%;height:5.5%}
+    .hs-report{left:53.7%;top:1.2%;width:7.1%;height:5.5%}
+    .hs-works{left:61.5%;top:1.2%;width:4.2%;height:5.5%}
+    .hs-news{left:66.7%;top:1.2%;width:5.2%;height:5.5%}
+    .hs-x{left:74.0%;top:1.0%;width:3.6%;height:5.5%}
+    .hs-youtube{left:77.8%;top:1.0%;width:3.6%;height:5.5%}
+    .hs-line{left:81.8%;top:1.0%;width:3.6%;height:5.5%}
+    .hs-contact{left:86.0%;top:.8%;width:12%;height:5.8%}
+    .content{max-width:1180px;margin:0 auto;padding:72px 24px 90px}
+    .section-title{font-size:clamp(28px,4vw,48px);margin:0 0 26px;font-weight:900;letter-spacing:.02em}
+    .section-title span{color:#11a7a6}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;border:1px solid #e6edf2;border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(15,23,42,.06)}
+    #policy{background:linear-gradient(135deg,#e6faf8 0%,#eff8ff 100%);border-radius:26px;padding:36px 30px 40px;margin:0 -18px}
+    #policy .card{background:#ffffff;box-shadow:0 12px 28px rgba(13,102,116,.09)}
+    .card h3{margin:0 0 12px;font-size:22px}.card p{margin:0;line-height:1.85;color:#475569}
+    .profile-card p+p{margin-top:14px}.profile-card strong{color:#0f172a}
+    .profile-intro{margin-bottom:26px!important;color:#64748b!important}
+    .timeline{position:relative;margin:24px 0 20px 8px;padding:0 0 0 30px;border-left:3px solid #bcebe8}
+    .timeline-item{position:relative;padding:0 0 25px 0}
+    .timeline-item:last-child{padding-bottom:0}
+    .timeline-item:before{content:"";position:absolute;left:-39px;top:6px;width:14px;height:14px;border-radius:50%;background:#11a7a6;border:4px solid white;box-shadow:0 0 0 2px #bcebe8}
+    .timeline-year{font-size:14px;font-weight:800;letter-spacing:.03em;color:#0c9394;margin-bottom:5px}
+    .timeline-heading{font-size:19px;font-weight:800;color:#0f172a;margin-bottom:4px}
+    .timeline-desc{font-size:15px;line-height:1.8;color:#475569}
+    .profile-foot{margin-top:25px!important;padding-top:20px;border-top:1px solid #e6edf2}
+    .cta{margin-top:54px;border-radius:24px;padding:38px;background:linear-gradient(135deg,#e8fffb,#ecf8ff);display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .cta strong{font-size:clamp(24px,3.2vw,38px)}
+    .cta a{background:#11a7a6;color:white;padding:16px 28px;border-radius:999px;font-weight:800;white-space:nowrap}
+    footer{padding:35px 20px;text-align:center;color:#64748b;border-top:1px solid #edf2f7}
+    @media (max-width:900px){
+      .hero-art{min-height:auto}
+      .grid{grid-template-columns:1fr}.content{padding-top:48px}.cta{flex-direction:column;align-items:flex-start}
+      .hotspot{display:none}
+      #policy{margin:0;padding:26px 18px;border-radius:20px}
+    }
+
+    .activity-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .activity-card{overflow:hidden;border:1px solid #e3edf1;border-radius:18px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.055)}
+    .activity-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#eaf5f7}
+    /* Keep the entire subject visible in the two requested activity photographs */
+    .activity-card img[src="assets/diet-opening.jpg"],
+    .activity-card img[src="assets/diet-question.jpg"]{object-fit:contain;object-position:center;background:#f1f6f8}
+    .activity-body{padding:19px 20px 22px}
+    .activity-tag{display:inline-block;font-size:12px;font-weight:800;color:#087f83;background:#e5f7f5;padding:5px 10px;border-radius:100px;margin-bottom:10px}
+    .activity-card h3{font-size:19px;line-height:1.45;margin:0 0 9px;color:#102137}
+    .activity-card p{font-size:14px;line-height:1.75;color:#506176;margin:0}
+    .activity-footer{margin-top:24px;text-align:right}
+    .activity-footer a{display:inline-block;padding:12px 20px;border:1px solid #10a3a1;border-radius:999px;color:#078b8b;font-weight:800}
+    .section-lead{margin:-10px 0 25px;color:#64748b;line-height:1.7}
+    @media(max-width:900px){.activity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:580px){.activity-grid{grid-template-columns:1fr}.activity-card img{aspect-ratio:5/3}}
+
+    /* Hero image includes an old baked-in menu: cover that strip with a functional menu. */
+    .site-nav{position:absolute;top:0;left:0;right:0;z-index:10;min-height:64px;padding:12px max(18px,calc((100vw - 1190px)/2));display:flex;align-items:center;justify-content:center;gap:clamp(8px,1.4vw,22px);background:#eafcff;box-shadow:0 1px 0 rgba(0,0,0,.06);font-size:clamp(11px,1vw,14px);font-weight:800}
+    .site-nav a{white-space:nowrap;transition:color .2s}
+    .site-nav a:hover{color:#098d90}
+    .site-nav .sns-symbol{display:flex;align-items:center;justify-content:center;width:30px;height:30px}
+    .site-nav .sns-symbol svg{width:23px;height:23px;display:block}
+    .site-nav .sns-symbol.youtube svg{width:27px;height:27px}
+    .nav-identity{display:flex;flex-direction:column;gap:3px;line-height:1.2;margin-right:auto;white-space:nowrap}
+    .nav-identity strong{font-size:clamp(22px,2.15vw,32px);letter-spacing:.01em;color:#0d3347}
+    .nav-identity small{font-size:clamp(12px,1vw,15px);color:#32717d;font-weight:700}
+    .nav-links{display:flex;align-items:center;justify-content:flex-end;gap:clamp(7px,.75vw,12px);flex-wrap:wrap}
+    .site-nav{justify-content:space-between;gap:12px;padding-left:max(18px,calc((100vw - 1310px)/2));padding-right:max(18px,calc((100vw - 1310px)/2))}
+    @media(max-width:1050px){.nav-identity{margin-right:0}.site-nav{justify-content:center;gap:14px}.nav-links{justify-content:center}}
+    @media(max-width:600px){.nav-identity strong{font-size:26px}.nav-identity{width:100%;text-align:center}.nav-links{gap:10px 13px}.site-nav{padding:12px 10px}}
+    .site-nav .nav-contact{padding:10px 14px;background:#0ba5a5;color:#fff;border-radius:999px}
+    .works-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
+    .work-card{margin:0;min-width:0;background:#fff;border:1px solid #e6edf2;border-radius:17px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,.07)}
+    .work-card img{display:block;width:100%;height:300px;object-fit:contain;background:#f2f7f9;padding:9px}
+    .work-card figcaption{padding:14px 12px 17px;text-align:center;font-size:15px;font-weight:800;line-height:1.5}
+    @media(max-width:1050px){.site-nav{position:relative;flex-wrap:wrap;gap:10px 17px;padding:12px 16px}.works-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:600px){.works-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.work-card img{height:240px}.work-card figcaption{font-size:13px}.site-nav{font-size:12px}}
+  </style>
+</head>
+<body>
+  <section class="hero-wrap" aria-label="メインビジュアル">
+    <img class="hero-art" src="hero-reference.png" alt="日本には、世界で勝てるコンテンツがある。海外への宣伝・販売・流通を活性化し、クリエイターに利益が還元される仕組みをつくる。つくる人が、安心して挑戦できる日本へ。" />
+    <nav class="site-nav" aria-label="メインメニュー">
+      <div class="nav-identity"><strong>衆議院議員　土橋あきひろ</strong><small>チームみらい　比例代表・東京ブロック</small></div>
+      <div class="nav-links">
+        <a href="#home">ホーム</a><a href="#profile">プロフィール</a><a href="#policy">三つの政策</a><a href="#diet">国会での活動</a><a href="#report">活動レポート</a><a href="#works">作品</a>
+        <a href="https://x.com/a_dobashi" target="_blank" rel="noopener noreferrer" aria-label="X（旧Twitter）" title="X"><span class="sns-symbol"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.5h3.37l-7.36 8.41L23.57 22.5h-6.78l-5.31-7.71-6.75 7.71H1.36l7.87-8.99L.93 1.5h6.95l4.8 6.98L18.9 1.5Zm-1.18 18.78h1.87L6.86 3.6H4.85l12.87 16.68Z"/></svg></span></a>
+        <a href="https://www.youtube.com/results?search_query=%E5%9C%9F%E6%A9%8B%E7%AB%A0%E5%AE%8F" target="_blank" rel="noopener noreferrer" aria-label="YouTubeで土橋章宏を検索" title="YouTube"><span class="sns-symbol youtube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="5" fill="#FF0033"/><path d="m10 8 6 4-6 4z" fill="white"/></svg></span></a>
+      </div>
+    </nav>
+  </section>
+
+  <main id="home" class="content">
+    <section id="policy">
+      <h2 class="section-title">日本の<span>稼ぐ力</span>を、次の世代へ</h2>
+      <div class="grid">
+        <article class="card"><h3>日本のコンテンツを世界へ</h3><p>コンテンツの海外での販売・資金調達を支援し、クリエイターの創作環境を整備して生涯にわたって創作活動を続けられるよう取り組みます。</p></article>
+        <article class="card"><h3>エネルギー政策</h3><p>AI時代に必要な電力を安定的に確保し、国民生活と産業競争力を両立させる、現実的なエネルギー政策の実現を目指します。</p></article>
+        <article class="card"><h3>子育てや介護の負担を減らす</h3><p>子どもの愛着形成を大切にした保育環境や、特別養護老人ホームの充実を図り、誰もが孤立せず、安心して暮らせる社会を目指します。</p></article>
+      </div>
+    </section>
+
+    <section id="profile" style="margin-top:76px">
+      <h2 class="section-title">プロフィール</h2>
+      <div class="card profile-card">
+        <h3>土橋章宏（どばし あきひろ）</h3>
+        <p class="profile-intro"><strong>衆議院議員／脚本家</strong></p>
+        <div class="timeline" aria-label="経歴年表">
+          <div class="timeline-item"><div class="timeline-year">1969年</div><div class="timeline-heading">大阪府豊中市出身</div></div>
+          <div class="timeline-item"><div class="timeline-year">学生時代</div><div class="timeline-heading">豊中高校、関西大学工学部卒業</div></div>
+          <div class="timeline-item"><div class="timeline-year">社会人として</div><div class="timeline-heading">日立製作所で研究開発に従事</div><div class="timeline-desc">その後、作家に転身。</div></div>
+          <div class="timeline-item"><div class="timeline-year">2014年</div><div class="timeline-heading">映画『超高速！参勤交代』公開</div><div class="timeline-desc">脚本を担当。後に日本アカデミー賞の脚本賞を受賞。</div></div>
+          <div class="timeline-item"><div class="timeline-year">その後</div><div class="timeline-heading">脚本家・小説家として活動</div><div class="timeline-desc">映画『身代わり忠臣蔵』などの脚本を手がける。</div></div>
+          <div class="timeline-item"><div class="timeline-year">2026年</div><div class="timeline-heading">衆議院議員に初当選</div><div class="timeline-desc">チームみらいから立候補。コンテンツ産業、エネルギー政策、子育て・介護の負担軽減に取り組む。</div></div>
+        </div>
+        <p class="profile-foot">二人の子育てと両親の介護に奮闘中。</p>
+      </div>
+    </section>
+
+<section id="diet" style="margin-top:76px"><h2 class="section-title">国会での活動</h2><p class="section-lead">国会での質疑や政策議論、研究・地域の現場での活動をご紹介します。</p><div class="activity-grid"><article class="activity-card"><img src="assets/diet-opening.jpg" loading="lazy" alt="第222回臨時国会が開会"><div class="activity-body"><span class="activity-tag">国会活動</span><h3>第222回臨時国会が開会</h3><p>外務委員会、消費者問題に関する特別委員会、国家基本政策委員会に所属。</p></div></article><article class="activity-card"><img src="assets/diet-question.jpg" loading="lazy" alt="外務委員会で質問"><div class="activity-body"><span class="activity-tag">国会質疑</span><h3>外務委員会で質問</h3><p>ODA・JICAの戦略的活用や、在外公館の役割強化などを取り上げました。</p></div></article><article class="activity-card"><img src="assets/diet-pension.jpg" loading="lazy" alt="年金制度改革シンポジウム"><div class="activity-body"><span class="activity-tag">政策議論</span><h3>年金制度改革シンポジウム</h3><p>超党派「シン・社会保障国民会議」のシンポジウムに登壇。</p></div></article><article class="activity-card"><img src="assets/diet-solar.jpg" loading="lazy" alt="ペロブスカイト太陽電池の研究現場へ"><div class="activity-body"><span class="activity-tag">研究施設視察</span><h3>ペロブスカイト太陽電池の研究現場へ</h3><p>産総研で次世代太陽電池の研究開発現場を視察しました。</p></div></article><article class="activity-card"><img src="assets/diet-fire.jpg" loading="lazy" alt="消防団のポンプ操法審査会"><div class="activity-body"><span class="activity-tag">地域活動</span><h3>消防団のポンプ操法審査会</h3><p>浅草消防団の活動を視察し、地域防災の現場に触れました。</p></div></article><article class="activity-card"><img src="assets/diet-street.jpg" loading="lazy" alt="地域での活動報告"><div class="activity-body"><span class="activity-tag">地域活動</span><h3>地域での活動報告</h3><p>浅草・日本橋などで活動を報告し、地域の声を伺いました。</p></div></article></div><div class="activity-footer"><a href="https://x.com/a_dobashi" target="_blank" rel="noopener noreferrer">Xで活動報告を見る ↗</a></div></section>
+
+    <section id="report" style="margin-top:76px"><h2 class="section-title">活動レポート</h2><p class="section-lead">国内外の視察で得た学びを、写真とともにお届けします。</p><div class="activity-grid"><article class="activity-card"><img src="assets/report-mongolia.jpg" loading="lazy" alt="モンゴルでの現地交流"><div class="activity-body"><span class="activity-tag">海外視察</span><h3>モンゴルでの現地交流</h3><p>現地の暮らしや地域の課題について、直接話を伺いました。</p></div></article><article class="activity-card"><img src="assets/report-school.jpg" loading="lazy" alt="モンゴルの教育現場を視察"><div class="activity-body"><span class="activity-tag">海外視察</span><h3>モンゴルの教育現場を視察</h3><p>子どもたちの教育環境や支援の現場を訪れました。</p></div></article><article class="activity-card"><img src="assets/report-children.jpg" loading="lazy" alt="子どもたちの学びと生活を考える"><div class="activity-body"><span class="activity-tag">海外視察</span><h3>子どもたちの学びと生活を考える</h3><p>現地の教育・福祉に関する取り組みを視察しました。</p></div></article><article class="activity-card"><img src="assets/report-korea-meeting.jpg" loading="lazy" alt="海外でのコンテンツ政策交流"><div class="activity-body"><span class="activity-tag">コンテンツ政策</span><h3>海外でのコンテンツ政策交流</h3><p>文化産業の海外展開に向けた意見交換を行いました。</p></div></article><article class="activity-card"><img src="assets/report-uk.jpg" loading="lazy" alt="英国で文化・工芸の発信を視察"><div class="activity-body"><span class="activity-tag">コンテンツ政策</span><h3>英国で文化・工芸の発信を視察</h3><p>海外での文化発信や流通の現場を訪れました。</p></div></article><article class="activity-card"><img src="assets/report-korean-content.jpg" loading="lazy" alt="韓国の芸術教育・文化政策を視察"><div class="activity-body"><span class="activity-tag">コンテンツ政策</span><h3>韓国の芸術教育・文化政策を視察</h3><p>韓国で芸術教育やコンテンツ産業の取り組みを調査しました。</p></div></article></div><div class="activity-footer"><a href="https://x.com/a_dobashi" target="_blank" rel="noopener noreferrer">Xで活動報告を見る ↗</a></div></section>
+
+    <section id="works" style="margin-top:76px">
+      <h2 class="section-title">作品</h2>
+      <p class="section-lead">脚本を手がけた映画作品をご紹介します。</p>
+      <div class="works-grid">
+        <figure class="work-card"><img src="assets/poster-sankin.jpg" alt="映画『超高速！参勤交代』のポスター" loading="lazy"><figcaption>『超高速！参勤交代』</figcaption></figure>
+        <figure class="work-card"><img src="assets/poster-hikkoshi.jpg" alt="映画『引っ越し大名』のポスター" loading="lazy"><figcaption>『引っ越し大名』</figcaption></figure>
+        <figure class="work-card"><img src="assets/poster-flight.jpg" alt="映画『水上のフライト』のポスター" loading="lazy"><figcaption>『水上のフライト』</figcaption></figure>
+        <figure class="work-card"><img src="assets/poster-migawari.jpg" alt="映画『身代わり忠臣蔵』のポスター" loading="lazy"><figcaption>『身代わり忠臣蔵』</figcaption></figure>
+        <figure class="work-card"><img src="assets/poster-sankin-returns.jpg" alt="映画『超高速！参勤交代フルスロットル』のポスター" loading="lazy"><figcaption>『超高速！参勤交代フルスロットル』</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Akihiro Dobashi</footer>
+</body>
+</html>
